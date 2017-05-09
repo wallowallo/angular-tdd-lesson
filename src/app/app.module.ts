@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { BannerComponent } from './banner/banner-inline.component';
+import { ExternalBannerComponent } from './external-template-banner/external-banner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BannerComponent
+    BannerComponent,
+    ExternalBannerComponent
   ],
   imports: [
     BrowserModule,
