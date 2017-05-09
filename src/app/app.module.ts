@@ -9,13 +9,16 @@ import { ExternalBannerComponent } from './external-template-banner/external-ban
 import { WelcomeComponent } from './welcome/welcome.component';
 
 import { UserService } from './models/user.service';
+import { TwainService } from './services/twain.service';
+import { TwainComponent } from './twain/twain.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BannerComponent,
     ExternalBannerComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    TwainComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +26,8 @@ import { UserService } from './models/user.service';
     HttpModule
   ],
   providers: [
-    UserService
+    UserService,
+    TwainService
   ],
   bootstrap: [AppComponent]
 })
