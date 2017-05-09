@@ -16,7 +16,6 @@ describe('ExternalBannerComponent (templateUrl)', () => {
     TestBed.configureTestingModule({
       declarations: [ ExternalBannerComponent ], // declare the test component
     })
-    .compileComponents();  // compile template and css
   }));
 
   // synchronous beforeEach
